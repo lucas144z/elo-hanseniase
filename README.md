@@ -177,29 +177,24 @@ Detalhes e justificativas em [`identidade-visual/`](identidade-visual/README.md)
 
 ## 8. Integrantes
 
-| Nome | RA | GitHub |
-|---|---|---|
-| Lucas Carmo | _(RA)_ | [@lucas144z](https://github.com/lucas144z) |
-| _(nome)_ | _(RA)_ | _(@usuario)_ |
-| _(nome)_ | _(RA)_ | _(@usuario)_ |
-| _(nome)_ | _(RA)_ | _(@usuario)_ |
-
-Cada integrante tem sua ficha em [`integrantes/`](integrantes/). Como participar do repositório:
-[`COMO_CONTRIBUIR.md`](COMO_CONTRIBUIR.md).
+| Nome | Curso | RA | GitHub |
+|---|---|---|---|
+| Lucas Carmo | Ciência de Dados | 2026106782 | [@lucas144z](https://github.com/lucas144z) |
+| _(nome)_ | _(curso)_ | _(RA)_ | _(@usuario)_ |
+| _(nome)_ | _(curso)_ | _(RA)_ | _(@usuario)_ |
+| _(nome)_ | _(curso)_ | _(RA)_ | _(@usuario)_ |
 
 ## 9. Estrutura do repositório
 
 ```
 elo-hanseniase/
 ├── README.md                 ← proposta completa (este arquivo)
-├── COMO_CONTRIBUIR.md        ← passo a passo para cada integrante
 ├── dados/
 │   ├── README.md             ← fontes e notas sobre os dados
 │   ├── brutos/               ← extrações originais do TABNET
 │   └── tratados/             ← CSVs limpos
 ├── docs/graficos/            ← gráficos usados neste README
 ├── identidade-visual/        ← logo, paleta e tipografia
-├── integrantes/              ← uma ficha por integrante
 ├── scripts/tratar_dados.py   ← limpa os dados e gera os gráficos
 └── requirements.txt
 ```
