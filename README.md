@@ -2,7 +2,7 @@
   <img src="identidade-visual/logo.svg" alt="Elo" width="360">
 </p>
 
-<h1 align="center">Elo — adesão ao tratamento da hanseníase</h1>
+<h1 align="center">Elo - adesão ao tratamento da hanseníase</h1>
 
 <p align="center">
   <b>FMU Tech Inovação · 1ª Edição · 2026.2</b><br>
