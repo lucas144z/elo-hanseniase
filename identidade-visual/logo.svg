@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" width="360" height="120" role="img" aria-label="Elo">
+  <g transform="rotate(-20 64 60)" fill="none" stroke-width="12">
+    <rect x="12" y="36" width="76" height="48" rx="24" stroke="#5B2A86"/>
+    <rect x="58" y="36" width="76" height="48" rx="24" stroke="#2E9E7A"/>
+    <!-- trecho do elo roxo que passa por cima do verde (efeito de corrente) -->
+    <path d="M 50 36 L 64 36 A 24 24 0 0 1 88 60" stroke="#5B2A86" stroke-linecap="butt"/>
+  </g>
+  <text x="160" y="80" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="64" font-weight="700" fill="#5B2A86" letter-spacing="-1">elo</text>
+  <text x="163" y="102" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#2B2733" letter-spacing="0.5">cuidado que não se rompe</text>
+</svg>

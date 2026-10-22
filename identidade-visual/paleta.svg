@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 150" width="720" height="150" role="img" aria-label="Paleta de cores do Elo">
+  <rect width="720" height="150" fill="#FFFFFF"/>
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" fill="#2B2733">
+    <rect x="10"  y="10" width="110" height="80" rx="10" fill="#5B2A86"/>
+    <text x="10"  y="110" font-weight="700">Roxo Janeiro</text><text x="10"  y="128">#5B2A86</text>
+    <rect x="130" y="10" width="110" height="80" rx="10" fill="#B9A3D6"/>
+    <text x="130" y="110" font-weight="700">Lavanda</text><text x="130" y="128">#B9A3D6</text>
+    <rect x="250" y="10" width="110" height="80" rx="10" fill="#2E9E7A"/>
+    <text x="250" y="110" font-weight="700">Verde Cuidado</text><text x="250" y="128">#2E9E7A</text>
+    <rect x="370" y="10" width="110" height="80" rx="10" fill="#E8A33D"/>
+    <text x="370" y="110" font-weight="700">Âmbar Alerta</text><text x="370" y="128">#E8A33D</text>
+    <rect x="490" y="10" width="110" height="80" rx="10" fill="#2B2733"/>
+    <text x="490" y="110" font-weight="700">Grafite</text><text x="490" y="128">#2B2733</text>
+    <rect x="610" y="10" width="100" height="80" rx="10" fill="#F6F3FA" stroke="#B9A3D6"/>
+    <text x="610" y="110" font-weight="700">Névoa</text><text x="610" y="128">#F6F3FA</text>
+  </g>
+</svg>
