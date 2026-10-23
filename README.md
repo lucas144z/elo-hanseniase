@@ -180,7 +180,7 @@ Detalhes e justificativas em [`identidade-visual/`](identidade-visual/README.md)
 | Nome | Curso | RA | GitHub |
 |---|---|---|---|
 | Lucas Carmo | Ciência de Dados | 2026106782 | [@lucas144z](https://github.com/lucas144z) |
-| _(nome)_ | _(curso)_ | _(RA)_ | _(@usuario)_ |
+|Fernando Diógenes Alves Santos | Ciência de Dados | 202610XXXX | [@fdiogenesalvesfdas](https://github.com/fdiogenesalvesfdas)
 | _(nome)_ | _(curso)_ | _(RA)_ | _(@usuario)_ |
 | _(nome)_ | _(curso)_ | _(RA)_ | _(@usuario)_ |
 
