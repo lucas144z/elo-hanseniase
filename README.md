@@ -181,7 +181,7 @@ Detalhes e justificativas em [`identidade-visual/`](identidade-visual/README.md)
 |---|---|---|---|
 | Lucas Carmo | Ciência de Dados | 2026106782 | [@lucas144z](https://github.com/lucas144z) |
 | _(nome)_ | _(curso)_ | _(RA)_ | _(@usuario)_ |
-| _(nome)_ | _(curso)_ | _(RA)_ | _(@usuario)_ |
+| Renato Guedes da Fonseca | Ciência de dados | 2026105211 | [@Renatoguds](https://github.com/Renatoguds) |
 | _(nome)_ | _(curso)_ | _(RA)_ | _(@usuario)_ |
 
 ## 9. Estrutura do repositório
