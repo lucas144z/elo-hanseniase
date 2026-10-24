@@ -84,7 +84,7 @@ A hanseníase apresenta maior prevalência e concentração nas regiões Centro-
 - Fatores de Vulnerabilidade e Desafios de Acompanhamento:
 Essa concentração nessas regiões é agravada por barreiras de acesso à saúde, tais como:
 - - Distância geográfica até as Unidades Básicas de Saúde (UBS).  
-- - Instabilidade de conexão à internet, que dificulta o acompanhamento contínuo e a notificação adequada dos pacientes.   
+- - Instabilidade de conexão à internet, que dificulta o acompanhamento contínuo e a notificação adequada dos pacientes.     
 
 ### Público e contexto
 
