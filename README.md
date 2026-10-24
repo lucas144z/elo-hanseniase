@@ -181,9 +181,9 @@ Detalhes e justificativas em [`identidade-visual/`](identidade-visual/README.md)
 |---|---|---|---|
 | Lucas Carmo | Ciência de Dados | 2026106782 | [@lucas144z](https://github.com/lucas144z) |
 | Renato Guedes da Fonseca | Ciência de Dados | 2026105211 | [@Renatoguds](https://github.com/Renatoguds) |
-| Fernando Diógenes Alves Santos | Ciência de Dados | 2025207116 | [@fdiogenesalvesfdas](https://github.com/fdiogenesalvesfdas) |
+| Fernando Diógenes Alves Santos | Ciência de Dados | 2025207116 | [@fdiogenesalvesfdas-ship-it](https://github.com/fdiogenesalvesfdas-ship-it) |
 | Rodrigo Lemos Poletti | Ciência de Dados | 2026101309 | [@salameco](https://github.com/salameco) |
-| Christian Tomaz Batista | Ciência de Dados | 2026100216 | [@iChrris](https://github.com/ChrrisBatista) |
+| Christian Tomaz Batista | Ciência de Dados | 2026100216 | [@iChrris](https://github.com/iChrris) |
 | Vinícius Santos Paes | Ciência de Dados | 2026105249 | [@vinipaes-mad4ru](https://github.com/vinipaes-mad4ru) |
 
 ## 9. Estrutura do repositório
