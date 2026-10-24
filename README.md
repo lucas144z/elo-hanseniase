@@ -67,17 +67,24 @@ usa para medir a qualidade do controle da hanseníase.
 
 ![Casos novos de hanseníase no Brasil](docs/graficos/casos_brasil.png)
 
-- Entre 2011 e 2025 foram cerca de **499 mil casos novos** no Brasil, **56,6% em homens**.
-- Em 2020 os diagnósticos caíram **35%** em relação a 2019. Isso não significa menos doença: na
-  pandemia as unidades atenderam menos e os casos deixaram de ser descobertos. Esses pacientes estão
-  chegando agora, muitas vezes já com sequelas.
-- Desde 2023 o país voltou ao patamar de **30 mil casos por ano**.
+- Panorama Geral (2011–2025):
+Durante o período analisado, o Brasil registrou cerca de 499 mil novos casos de hanseníase. A maior prevalência ocorreu na população masculina, que respondeu por 56,6% do total de diagnósticos.
+- O Impacto da Pandemia de COVID-19 (2020–2021):
+Em 2020, observou-se uma queda expressiva de 35% nos diagnósticos em comparação com 2019 (destacado no gráfico pelas barras em tom âmbar).  
+- - Nota explicativa: Essa redução reflete a diminuição do atendimento e da busca por diagnósticos nas unidades de saúde durante a pandemia, e não a queda real da circulação da doença. O represamento desses casos resultou na identificação tardia de pacientes em anos subsequentes, frequentemente já com sequelas graves.
+- Retomada dos Diagnósticos (2023–2025):
+A partir de 2023, com a regularização dos serviços de saúde, o registro de novos casos voltou a se estabilizar no patamar de 30 mil casos por ano.
 
 ![Casos por UF](docs/graficos/casos_uf.png)
 
-- **Mato Grosso** registrou **6.293 casos em 2025**, mais que o dobro de São Paulo, Rio de Janeiro,
-  Amazonas e Amapá **somados** (2.991). A doença se concentra nas regiões Centro-Oeste, Norte e
-  Nordeste, onde a distância até a UBS e a internet instável tornam o acompanhamento mais difícil.
+- Disparidade entre Estados (Destaque para Mato Grosso):
+O gráfico revela uma forte discrepância na distribuição geográfica dos casos no Brasil. Em 2025, o estado de Mato Grosso registrou 6.293 novos casos, montante que equivale a mais do que o dobro da soma de quatro outros estados — São Paulo, Rio de Janeiro, Amazonas e Amapá —, que juntos contabilizaram 2.991 casos.  
+-  Concentração Regional:
+A hanseníase apresenta maior prevalência e concentração nas regiões Centro-Oeste, Norte e Nordeste.  
+- Fatores de Vulnerabilidade e Desafios de Acompanhamento:
+Essa concentração nessas regiões é agravada por barreiras de acesso à saúde, tais como:
+- - Distância geográfica até as Unidades Básicas de Saúde (UBS).  
+- - Instabilidade de conexão à internet, que dificulta o acompanhamento contínuo e a notificação adequada dos pacientes.     
 
 ### Público e contexto
 
