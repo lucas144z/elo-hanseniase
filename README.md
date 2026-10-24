@@ -182,7 +182,7 @@ Detalhes e justificativas em [`identidade-visual/`](identidade-visual/README.md)
 | Lucas Carmo | Ciência de Dados | 2026106782 | [@lucas144z](https://github.com/lucas144z) |
 |Fernando Diógenes Alves Santos | Ciência de Dados | 202610XXXX | [@fdiogenesalvesfdas](https://github.com/fdiogenesalvesfdas)
 | Rodrigo Lemos Poletti | Ciência de Dados | 2026101309 | https://github.com/salameco |
-| Christian Tomaz Batista | Ciência de Dados | 2026100216 | @iChrris - (https://github.com/ChrrisBatista) |
+| Christian Tomaz Batista | Ciência de Dados | 2026100216 | @iChrris|
 
 ## 9. Estrutura do repositório
 
