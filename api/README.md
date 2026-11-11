@@ -16,6 +16,18 @@ Abra **http://localhost:8000/docs** para ver e testar as rotas no navegador.
 
 Códigos de teste: `ELO-001` (esquema MB, 12 meses) e `ELO-002` (esquema PB, 6 meses).
 
+## Usar PostgreSQL (opcional)
+
+Sem configurar nada, a API usa SQLite (`api/elo.db`). Para usar PostgreSQL:
+
+1. Crie um banco vazio chamado `elo` (pgAdmin: Databases → Create → Database).
+2. Crie o arquivo `api/.env` (ele não vai para o GitHub) com:
+   ```
+   DATABASE_URL=postgresql+psycopg2://postgres:SUA_SENHA@localhost:5432/elo
+   ```
+3. Rode `python -m api.seed` e suba a API normalmente. As tabelas aparecem no pgAdmin em
+   `elo → Schemas → public → Tables`.
+
 ## Rotas
 
 | Rota | O que faz |

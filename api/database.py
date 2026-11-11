@@ -1,16 +1,18 @@
 """Conexão com o banco.
 
 Por padrão usa SQLite (arquivo api/elo.db), que não precisa instalar nada.
-Para usar PostgreSQL, defina a variável de ambiente DATABASE_URL, por exemplo:
-    postgresql+psycopg://elo:elo@localhost:5432/elo
+Para usar PostgreSQL, crie o arquivo api/.env (ele não vai para o GitHub) com:
+    DATABASE_URL=postgresql+psycopg2://usuario:senha@localhost:5432/elo
 """
 import os
 from pathlib import Path
 
+from dotenv import load_dotenv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
 PASTA_API = Path(__file__).resolve().parent
+load_dotenv(PASTA_API / ".env")  # se o arquivo não existir, segue com SQLite
 DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{(PASTA_API / 'elo.db').as_posix()}")
 
 # check_same_thread é uma opção só do SQLite
