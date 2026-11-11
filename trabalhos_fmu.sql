@@ -1,64 +1,50 @@
--- Tabela de Clientes
-CREATE TABLE IF NOT EXISTS Clientes (
-    CodCliente TEXT PRIMARY KEY,
-    NomeCliente TEXT NOT NULL
+-- ============================================================
+-- PROJETO: Elo - Adesão ao Tratamento da Hanseníase (3FN)
+-- COMPONENTE: Banco de Dados Relacional Normalizado
+-- ============================================================
+
+-- 1. Criação da Tabela de Unidades de Saúde (UBS / Municípios)
+CREATE TABLE IF NOT EXISTS unidades_saude (
+    id_unidade INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome_ubs TEXT NOT NULL,
+    municipio TEXT NOT NULL,
+    uf TEXT NOT NULL DEFAULT 'SP'
 );
 
--- 2. Tabela de Produtos
-CREATE TABLE IF NOT EXISTS Produtos (
-    CodProduto TEXT PRIMARY KEY,
-    NomeProduto TEXT NOT NULL,
-    PrecoUnit REAL NOT NULL
+-- 2. Criação da Tabela de Pacientes
+CREATE TABLE IF NOT EXISTS pacientes (
+    id_paciente INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome_paciente TEXT NOT NULL,
+    idade INTEGER NOT NULL,
+    sexo CHAR(1) CHECK(sexo IN ('M', 'F')),
+    id_unidade INTEGER,
+    FOREIGN KEY (id_unidade) REFERENCES unidades_saude(id_unidade)
 );
 
--- 3. Tabela de Pedidos
-CREATE TABLE IF NOT EXISTS Pedidos (
-    Pedido INTEGER PRIMARY KEY,
-    DataPedido TEXT NOT NULL,
-    CodCliente TEXT NOT NULL,
-    FOREIGN KEY (CodCliente) REFERENCES Clientes(CodCliente)
+-- 3. Criação da Tabela de Notificações / Casos SINAN
+CREATE TABLE IF NOT EXISTS notificacoes_hanseniase (
+    id_notificacao INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_paciente INTEGER NOT NULL,
+    data_notificacao DATE NOT NULL,
+    forma_clinica TEXT CHECK(forma_clinica IN ('Indeterminada', 'Tuberculóide', 'Dimorfa', 'Virchowiana')),
+    classificacao_operacional TEXT CHECK(classificacao_operacional IN ('Paucibacilar', 'Multibacilar')),
+    esquema_terapeutico TEXT NOT NULL,
+    status_adesao TEXT DEFAULT 'Em Acompanhamento',
+    FOREIGN KEY (id_paciente) REFERENCES pacientes(id_paciente)
 );
 
--- 4. Tabela de Itens do Pedido
-CREATE TABLE IF NOT EXISTS Itens_Pedido (
-    Pedido INTEGER NOT NULL,
-    CodProduto TEXT NOT NULL,
-    Qtd INTEGER NOT NULL,
-    PRIMARY KEY (Pedido, CodProduto),
-    FOREIGN KEY (Pedido) REFERENCES Pedidos(Pedido),
-    FOREIGN KEY (CodProduto) REFERENCES Produtos(CodProduto)
-);
+-- ============================================================
+-- INSERÇÃO DE DADOS DE TESTE (Tema: Hanseníase / ODS 3)
+-- ============================================================
 
+INSERT INTO unidades_saude (nome_ubs, municipio, uf) VALUES 
+('UBS Penha de França', 'São Paulo', 'SP'),
+('UBS Liberdade', 'São Paulo', 'SP');
 
--- Inserir dados de exemplo
-INSERT OR IGNORE INTO Clientes (CodCliente, NomeCliente) VALUES 
-('C01', 'Ana Lima'),
-('C02', 'Bruno Alves');
+INSERT INTO pacientes (nome_paciente, idade, sexo, id_unidade) VALUES 
+('João da Silva', 45, 'M', 1),
+('Maria Souza', 32, 'F', 2);
 
-INSERT OR IGNORE INTO Produtos (CodProduto, NomeProduto, PrecoUnit) VALUES 
-('P10', 'Teclado', 120.00),
-('P20', 'Mouse', 50.00);
-
-INSERT OR IGNORE INTO Pedidos (Pedido, DataPedido, CodCliente) VALUES 
-(1001, '2026-09-10', 'C01'),
-(1002, '2026-09-12', 'C02');
-
-INSERT OR IGNORE INTO Itens_Pedido (Pedido, CodProduto, Qtd) VALUES 
-(1001, 'P10', 1),
-(1001, 'P20', 2),
-(1002, 'P10', 1);
-
--- Consulta unida (JOIN) para o relatório
-SELECT 
-    p.Pedido, 
-    p.DataPedido, 
-    c.CodCliente, 
-    c.NomeCliente, 
-    pr.CodProduto, 
-    pr.NomeProduto, 
-    i.Qtd, 
-    pr.PrecoUnit
-FROM Pedidos p
-JOIN Clientes c ON p.CodCliente = c.CodCliente
-JOIN Itens_Pedido i ON p.Pedido = i.Pedido
-JOIN Produtos pr ON i.CodProduto = pr.CodProduto;
+INSERT INTO notificacoes_hanseniase (id_paciente, data_notificacao, forma_clinica, classificacao_operacional, esquema_terapeutico, status_adesao) VALUES 
+(1, '2026-10-15', 'Dimorfa', 'Multibacilar', 'PBM/12 doses', 'Em Acompanhamento'),
+(2, '2026-11-01', 'Tuberculóide', 'Paucibacilar', 'PB/6 doses', 'Aderente');
