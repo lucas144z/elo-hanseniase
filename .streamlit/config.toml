@@ -1,0 +1,7 @@
+# Tema do painel epidemiológico (paleta do Elo)
+[theme]
+base = "light"
+primaryColor = "#5B2A86"
+backgroundColor = "#F6F3FA"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#2B2733"

@@ -1,2 +1,13 @@
+# Tratamento de dados (scripts/)
 pandas>=2.0
 matplotlib>=3.7
+
+# API (api/)
+fastapi>=0.115
+uvicorn[standard]>=0.30
+sqlalchemy>=2.0
+pyjwt>=2.8
+
+# Painel epidemiológico (painel/)
+streamlit>=1.40
+plotly>=5.20

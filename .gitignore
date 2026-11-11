@@ -7,3 +7,11 @@ venv/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# App (Node)
+node_modules/
+dist/
+dev-dist/
+
+# Banco local do protótipo (recriado com python -m api.seed)
+api/*.db

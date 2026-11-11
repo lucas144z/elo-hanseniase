@@ -1,0 +1,404 @@
+/* Identidade visual do Elo (ver identidade-visual/README.md) */
+:root {
+  --roxo: #5b2a86;
+  --lavanda: #b9a3d6;
+  --verde: #2e9e7a;
+  --ambar: #e8a33d;
+  --ambar-claro: #fbecd2;
+  --grafite: #2b2733;
+  --nevoa: #f6f3fa;
+  --branco: #ffffff;
+  --cinza: #6e6878;
+  --raio: 16px;
+  --fonte-titulo: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  --fonte-texto: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--nevoa);
+  color: var(--grafite);
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0 0 16px;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+/* ---------- Estrutura ---------- */
+.app {
+  max-width: 480px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--roxo);
+}
+
+.marca img {
+  height: 36px;
+}
+
+.marca.grande {
+  font-size: 3rem;
+  justify-content: center;
+}
+
+.marca.grande img {
+  height: 72px;
+}
+
+.conteudo {
+  flex: 1;
+  padding: 8px 16px 96px;
+}
+
+.abas {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  background: var(--branco);
+  border-top: 1px solid var(--lavanda);
+}
+
+.aba {
+  flex: 1;
+  padding: 16px 8px;
+  border: 0;
+  background: none;
+  color: var(--cinza);
+  font-weight: 600;
+}
+
+.aba.ativa {
+  color: var(--roxo);
+  box-shadow: inset 0 3px 0 var(--roxo);
+}
+
+.link {
+  border: 0;
+  background: none;
+  color: var(--roxo);
+  font-weight: 600;
+}
+
+/* ---------- Entrada ---------- */
+.entrada {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  text-align: center;
+}
+
+.slogan {
+  margin: 0 0 40px;
+  color: var(--cinza);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.formulario label {
+  font-weight: 600;
+}
+
+.formulario input {
+  padding: 14px 16px;
+  font-size: 1.1rem;
+  border: 2px solid var(--lavanda);
+  border-radius: 12px;
+  background: var(--branco);
+  text-transform: uppercase;
+}
+
+.formulario input:focus {
+  outline: none;
+  border-color: var(--roxo);
+}
+
+.botao {
+  padding: 14px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--roxo);
+  color: var(--branco);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.dica {
+  margin-top: 32px;
+  font-size: 0.9rem;
+  color: var(--cinza);
+}
+
+/* ---------- Hoje ---------- */
+.saudacao {
+  margin-bottom: 20px;
+}
+
+.cartao-dose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 28px 20px;
+  border-radius: var(--raio);
+  background: var(--branco);
+  border: 2px solid var(--lavanda);
+  text-align: center;
+}
+
+.cartao-dose.feita {
+  border-color: var(--verde);
+}
+
+.cartao-dose p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.rotulo {
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  color: var(--roxo);
+}
+
+.botao-tomei {
+  width: 168px;
+  height: 168px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--verde);
+  color: var(--branco);
+  font-family: var(--fonte-titulo);
+  font-size: 2rem;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(46, 158, 122, 0.35);
+}
+
+.botao-tomei:active {
+  transform: scale(0.97);
+}
+
+.icone-ok {
+  display: grid;
+  place-items: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--verde);
+  color: var(--branco);
+  font-size: 3rem;
+}
+
+.resumo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0 0;
+}
+
+.resumo div {
+  padding: 14px;
+  border-radius: 12px;
+  background: var(--branco);
+}
+
+.resumo dt {
+  font-size: 0.85rem;
+  color: var(--cinza);
+}
+
+.resumo dd {
+  margin: 4px 0 0;
+  font-weight: 600;
+}
+
+/* ---------- Calendário ---------- */
+.cabecalho-mes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.cabecalho-mes h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.seta {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--branco);
+  color: var(--roxo);
+  font-size: 1.5rem;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.dia-semana {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--cinza);
+}
+
+.dia {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  background: var(--branco);
+  font-weight: 600;
+}
+
+.dia.tomada {
+  background: var(--verde);
+  color: var(--branco);
+}
+
+.dia.esquecida {
+  background: var(--ambar-claro);
+  box-shadow: inset 0 0 0 2px var(--ambar);
+}
+
+/* contorno roxo no dia de hoje, tomada ou não */
+.dia.dia-de-hoje {
+  outline: 2px solid var(--roxo);
+  outline-offset: 2px;
+}
+
+.dia.fora {
+  background: transparent;
+  color: var(--lavanda);
+  font-weight: 400;
+}
+
+/* bolinha roxa marca o dia da dose na UBS */
+.dia.supervisionada::after,
+.amostra.supervisionada::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--roxo);
+}
+
+.dia.tomada.supervisionada::after {
+  background: var(--branco);
+}
+
+.grade-carregando {
+  grid-column: 1 / -1;
+}
+
+.legenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.legenda li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.amostra {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background: var(--branco);
+}
+
+.amostra.tomada {
+  background: var(--verde);
+}
+
+.amostra.esquecida {
+  background: var(--ambar-claro);
+  box-shadow: inset 0 0 0 2px var(--ambar);
+}
+
+.amostra.hoje {
+  outline: 2px solid var(--roxo);
+  outline-offset: 1px;
+}
+
+.amostra.supervisionada::after {
+  bottom: auto;
+}
+
+/* ---------- Mensagens ---------- */
+.erro {
+  color: #8a4b00;
+  background: var(--ambar-claro);
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+.carregando,
+.em-construcao {
+  color: var(--cinza);
+}
