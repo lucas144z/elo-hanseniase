@@ -204,3 +204,19 @@ elo-hanseniase/
 ---
 
 <sub>Projeto acadêmico — FMU Tech Inovação 2026.2. Dados: SINAN/TABNET, Ministério da Saúde.</sub>
+
+
+---
+
+## 🗄️ Checkpoint 2 - Protótipo de Banco de Dados Relacional (3FN)
+- **Modelagem:** Estrutura normalizada em 3ª Forma Normal (3FN).
+- **Banco de Dados:** SQLite (`normalizacao.db`)
+- **Scripts SQL:** `trabalhos_fmu.sql`
+- **Ambiente:** Visual Studio Code com extensão SQLite Explorer.
+
+### Como Executar o Protótipo
+1. Descarregue ou clone este repositório.
+2. Abra o diretório no **Visual Studio Code**.
+3. Certifique-se de ter a extensão **SQLite** ativa.
+4. Abra o ficheiro `trabalhos_fmu.sql`.
+5. Selecione os comandos, pressione `Ctrl + Shift + P`, escolha `SQLite: Run Query` e prima `Enter` para visualizar a consulta das tabelas normalizadas.
